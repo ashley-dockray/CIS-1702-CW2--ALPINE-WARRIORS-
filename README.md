@@ -2,6 +2,8 @@
 
 ## Comand-line Inventory Management System
 
+**Project Brief: [Click Here](https://learningedge.edgehill.ac.uk/ultra/courses/_328443_1/outline/file/_6309650_1)**
+
 File handling and data persistence - **???**  
 Add and view stock - **Ben**  
 Update and delete items - **Robbie**  
