@@ -1,6 +1,6 @@
 # CIS-1702-CW2-ALPINE-WARRIORS-
 
-## Comand-line Inventory System
+## Comand-line Inventory Management System
 
 File handling and data persistence - **???**  
 Add and view stock - **Ben**  
