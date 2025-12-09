@@ -9,7 +9,7 @@
 ----------------------------------------------  
 
 File handling and data persistence - **???**  
-Add and view stock - **Ben**  
+View and add stock - **Ben**  
 Update and delete items - **Robbie**  
 Search and reports - **???**  
 Main menu system - **Max**  
