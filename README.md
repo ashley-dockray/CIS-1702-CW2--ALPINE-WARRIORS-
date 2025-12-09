@@ -1,4 +1,4 @@
-# CIS-1702-CW2--ALPINE-WARRIORS-
+# CIS-1702-CW2-ALPINE-WARRIORS-
 
 ## Comand-line Inventory System
 
