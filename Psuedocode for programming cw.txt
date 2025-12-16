@@ -1,0 +1,66 @@
+# START program
+# call load_inventory_files
+
+# WHILE True DO
+#     display menu options:
+#         1. add item
+#         2. view stock
+#         3. update item
+#         4. search item
+#         5. save inventory
+#         6. exit inventory
+
+#     input choice
+#     IF choice == "add item" THEN
+#         call add_item
+#     ELSE IF choice == "view stock" THEN
+#         call view_stock
+#     ELSE IF choice == "update item" THEN
+#         call update_item
+#     ELSE IF choice == "search item" THEN
+#         call search_item
+#     ELSE IF choice == "save inventory" THEN
+#         call save_inventory
+#     ELSE IF choice == "exit inventory" THEN
+#         call save_inventory
+#         BREAK      
+#     ELSE
+#         display "Invalid choice, please try again."
+#     END IF
+# END WHILE
+# END program
+
+# Function add_item:
+#     input id, name, price, quantity
+#     create new item with id, name, price, quantity
+#     add item to inventory
+#     display "Item added"
+# END Function
+
+# Function view_stock:
+#     FOR each item in inventory DO
+#         display (id, name, price, quantity)
+#     END FOR
+# END Function
+
+# Function update_item:
+#     input id
+#     find item by id
+
+#     IF item not found THEN
+#         display "Item not found"
+#     ELSE
+#         input new name, new price, new quantity
+#         update item
+#         display "Item updated"
+#     END IF
+# END Function
+
+# Function search_item:
+#     input search term
+#     FOR each item in inventory DO
+#         IF item.name contains search term THEN
+#             display (id, name, price, quantity)
+#         END IF
+#     END FOR
+# END Function
