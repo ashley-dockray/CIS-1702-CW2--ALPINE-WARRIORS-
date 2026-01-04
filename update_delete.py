@@ -1,4 +1,5 @@
 #Robbie
+# This script updates and deletes records in a CSV file.
 
 import csv 
 
