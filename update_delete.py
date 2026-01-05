@@ -4,15 +4,19 @@ def update_item(inventory):
 
     # Get valid item ID or return to menu
     while True:
+        
+        user_input = input("Enter item ID to update (or M to return to menu): ").strip()
+
+        if user_input.lower() == "m":
+            return
+
         try:
-            item_id = input("Enter item ID to update (or m to return to menu): ").strip()
-            item_id = int(item_id)
+            item_id = int(user_input)
         except ValueError:
-            if item_id.lower() == 'm':
-                return
-            print("ID must be a number.")
+            print("ID must be a whole number.")
             continue
 
+        
         item = None
         for i in inventory:
             if i["id"] == item_id:
@@ -65,15 +69,17 @@ def update_item(inventory):
 def delete_item(inventory):
 
     while True:
-        try:
-            item_id = input("Enter item ID to delete (or m to return to menu): ").strip()
-            item_id = int(item_id)
-        except ValueError:
-            if item_id.lower() == 'm':
-                return
-            print("ID must be a number.")
-            continue
+        user_input = input("Enter item ID to delete (or M to return to menu): ").strip()
 
+        if user_input.lower() == "m":
+            return
+
+        try:
+            item_id = int(user_input)
+        except ValueError:
+            print("ID must be a whole number.")
+            continue
+        
         for i in range(len(inventory)):
             if inventory[i]["id"] == item_id:
                 del inventory[i]
