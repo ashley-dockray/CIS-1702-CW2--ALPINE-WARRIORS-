@@ -1,0 +1,14 @@
+import csv
+inventory = (
+        {"name": "apples", "product_id": 1, "quantity": 50},
+        {"name": "bananas", "product_id": 2, "quantity": 30},
+)
+
+def save():
+    with open("inventory.csv", "w", newline='') as csvfile:
+        writer = csv.writer(csvfile)
+        for item in inventory:
+            writer.writerow([item['name'], item['product_id'], item['quantity']])
+
+
+save()
