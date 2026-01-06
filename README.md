@@ -12,7 +12,7 @@ File handling and data persistence - **???**
 View and add stock - **Ben**  
 Update and delete items - **Robbie**  
 Search and reports - **Freddy**  
-Main menu system and save inventory - **Max**  
+Main menu system and save/exit inventory - **Max**  
 Testing validation and documentation - **ash**
 
 ------------How to read CSV file--------------
