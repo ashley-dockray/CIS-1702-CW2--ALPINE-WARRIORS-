@@ -41,7 +41,9 @@ def save_inventory_file(inventory):
         print(f"error saving inventory: {e}")
 
 def main():
+    # loads inventory from csv file at program start
     inventory = load_inventory_file()
+    # main menu loop - runs until user exists
     while True:
         print("\n--- Inventory Management Menu ---")
         print("1. Add item")
@@ -52,8 +54,10 @@ def main():
         print("6. Save inventory")
         print("7. Exit")
 
+        # get users input and removes whitespace
         choice = input("Select an option (1–7): ").strip()
 
+        # route to appropraite function based on user choice 
         if choice == "1":
             add_item(inventory)
         elif choice == "2":
@@ -63,6 +67,7 @@ def main():
         elif choice == "4":
             delete_item(inventory)
         elif choice == "5":
+            # search for item and display results if found 
             result = search_item(inventory)
         
             if result is not None:
@@ -76,15 +81,21 @@ def main():
                 print("Item not found.")
 
         elif choice == "6":
+            # saves current inventory to file 
             save_inventory_file(inventory)
         elif choice == "7":
+            # save inventory before exiting, handle any save errors gracefully 
             try:
                 save_inventory_file(inventory)
                 print("Exiting program. Inventory saved.")
             except Exception:
                 print("Exiting program. Warning: inventory could not be saved.")
             break
+        else: 
+            # invlaid input - prompt user to try again
+            print("invalid option. could you please select 1 - 7.")
 
 if __name__ == "__main__":
     main()
+
 
