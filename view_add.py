@@ -1,5 +1,18 @@
 import csv
 
+#this code is to match up with the rest of my groups work
+def view_stock(inventory):
+    if not inventory:
+        print("Inventory is empty.")
+        return
+    save_inventory_file(inventory)
+    view()
+
+def add_item(inventory):
+    userinput() #writes to CSV using add()
+    inventory[:] = load_inventory()  #refresh the existing list in place
+    print("Item added.")
+
 #view file in a formatted table
 def view():
     #reads inventory csv and converts it into a list of lists
@@ -35,5 +48,6 @@ def userinput():
     price = str(input("price of item: "))
     quantity = int(input("quantity of item: "))
     add(item, productid, price, quantity)
+
 
 view()
