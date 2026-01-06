@@ -101,11 +101,8 @@ def main():
             save_inventory_file(inventory)
         elif choice == "7":
             # save inventory before exiting, handle any save errors gracefully
-            try:
-                save_inventory_file(inventory)
-                print("Exiting program. Inventory saved.")
-            except Exception:
-                print("Exiting program. Warning: inventory could not be saved.")
+        elif choice == "7":
+            print("Exiting program. Inventory not saved.")
             break
         else:
             # invlaid input - prompt user to try again
@@ -113,3 +110,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
