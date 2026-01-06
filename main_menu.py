@@ -6,7 +6,7 @@ def load_inventory():
     inventory = []
     try: 
         with open("inventory.csv", newline="") as csvfile: # with statement used to open the csv file 
-            redaer = csv.reader(csvfile)
+            reader = csv.reader(csvfile)
             for row in reader: 
                 if not row: 
                     continue #skips empty lines 
@@ -97,5 +97,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
