@@ -38,7 +38,5 @@ def userinput():
     add(item, productid, price, quantity)
 
 
-view()
-
 
 
